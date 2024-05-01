@@ -38,7 +38,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "",
+              "https://telegra.ph/file/b93ef3ac49f43b15dcced.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -46,7 +46,7 @@ async def help(event):
             await event.client.send_message(event.chat_id, f"An Exception Occured!\n\n**ERROR:** {str(e)}")
 
 
-extra_msg = f""https://telegra.ph/file/b93ef3ac49f43b15dcced.jpg"
+extra_msg = f"""
 **»💘 𝐄𝐗𝐓𝐑𝐀 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 💘:**
 
 💘 𝐔𝐒𝐄𝐑 𝐁𝐎𝐓💘: **💘𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐌𝐃𝐒💘**
