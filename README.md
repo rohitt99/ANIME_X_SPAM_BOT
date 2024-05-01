@@ -1,10 +1,10 @@
-<h1 align="center"><b>[✨🥀] ˹𝙃 𝙊 𝙉 𝙀 𝙔 ✘ 𝘿 𝘼 𝘿 ˼ [✨🥀]</b></h1>
+<h1 align="center"><b>[✨🥀] ˹𝔸ℕ𝕀ℕ𝔼𝔼 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋˼ [✨🥀]</b></h1>
 
 <h4 align="center"> 𝐀 𝐏𝐎𝐖𝐄𝐑𝐅𝐔𝐋 𝐒𝐏𝐀𝐌𝐁𝐎𝐓𝐒</h4>
 
-[<img src="https://telegra.ph/file/b93ef3ac49f43b15dcced.jpg"/>]
+[<img src="https://telegra.ph/file/7b23e31e05a689b217552.jpg"/>]
 
-> ⭐️ Thanks to everyone for using this op 🥀 𝙃 𝙊 𝙉 𝙀 𝙔 ✘ 𝘿 𝘼 𝘿 🥀. That is the greatest pleasure we have !
+> ⭐️ Thanks to everyone for using this op 🥀 𝔸ℕ𝕀ℕ𝔼𝔼 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋 🥀. That is the greatest pleasure we have !
 
 
 # ᴅᴇᴘʟᴏʏᴍᴇɴᴛ
@@ -23,6 +23,6 @@
 <summary><b>sᴜᴘᴘᴏʀᴛ</b></summary>
 <br>
 
-<a href="https://t.me/+H70zj_o4rHg4MTk1"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+<a href="https://t.me/MRITYUY"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 
 </details>
