@@ -1,4 +1,4 @@
-<h1 align="center"><b>[✨🥀] ˹𝔸ℕ𝕀ℕ𝔼𝔼 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋˼ [✨🥀]</b></h1>
+<h1 align="center"><b>[✨🥀] RITESH 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋˼ [✨🥀]</b></h1>
 
 <h4 align="center"> 𝐀 𝐏𝐎𝐖𝐄𝐑𝐅𝐔𝐋 𝐒𝐏𝐀𝐌𝐁𝐎𝐓𝐒</h4>
 
