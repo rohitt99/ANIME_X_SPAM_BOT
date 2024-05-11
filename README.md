@@ -4,7 +4,7 @@
 
 [<img src="https://telegra.ph/file/fd3ad786a249ff2bf3889.jpg"/>]
 
-> ⭐️ Thanks to everyone for using this op 🥀 𝔸ℕ𝕀ℕ𝔼𝔼 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋 🥀. That is the greatest pleasure we have !
+> ⭐️ Thanks to everyone for using this op 🥀 RITESH 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋 🥀. That is the greatest pleasure we have !
 
 
 # ᴅᴇᴘʟᴏʏᴍᴇɴᴛ
