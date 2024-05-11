@@ -21,7 +21,7 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        jarvis = await e.reply(f"𝔸ℕ𝕀ℕ𝔼𝔼 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋")
+        jarvis = await e.reply(f"Rɪᴛᴇsʜ 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
         await jarvis.edit(f"𝐖𝐇𝐀𝐓 𝐈 𝐂𝐀𝐍 𝐃𝐎 𝐅𝐎𝐑 𝐘𝐎𝐔 𝐁𝐀𝐁𝐘 [𝐌𝐲 𝐎𝐖𝐍𝐄𝐑 𝐈𝐒𝔸ℕ𝕀ℕ𝔼𝔼 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋 ]")
@@ -99,7 +99,7 @@ async def addsudo(event):
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
 
-        ok = await event.reply(f"»[𝔸ℕ𝕀ℕ𝔼𝔼 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋] 𝐒𝐔𝐃𝐎 𝐃𝐄 𝐃𝐈𝐘𝐀 𝐇𝐄 𝐁𝐀𝐁𝐘  G𝐎 𝐀𝐍𝐃 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 s𝐄𝐍𝐄𝐌𝐘'𝐒 😂_")
+        ok = await event.reply(f"»[Rɪᴛᴇsʜ 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋] 𝐒𝐔𝐃𝐎 𝐃𝐄 𝐃𝐈𝐘𝐀 𝐇𝐄 𝐁𝐀𝐁𝐘  G𝐎 𝐀𝐍𝐃 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 s𝐄𝐍𝐄𝐌𝐘'𝐒 😂_")
         target = ""
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
@@ -127,7 +127,7 @@ async def addsudo(event):
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
-        await event.reply("» 𝐒𝐎𝐑𝐑𝐘 𝐘𝐀𝐀𝐑 𝐌𝐄𝐑𝐀 𝐎𝐖𝐍𝐄𝐑 𝐇𝐈 𝐒𝐔𝐃𝐎 𝐃𝐄𝐆𝐀 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐓𝐎 [𝔸ℕ𝕀ℕ𝔼𝔼 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋]🫧🥀...")
+        await event.reply("» 𝐒𝐎𝐑𝐑𝐘 𝐘𝐀𝐀𝐑 𝐌𝐄𝐑𝐀 𝐎𝐖𝐍𝐄𝐑 𝐇𝐈 𝐒𝐔𝐃𝐎 𝐃𝐄𝐆𝐀 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐓𝐎 [Rɪᴛᴇsʜ 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋]🫧🥀...")
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
@@ -185,4 +185,4 @@ async def show_sudo_users(event):
             sudo_users_list += f"- {user_id}\n"
         await event.reply(sudo_users_list)
     else:
-        await event.reply("🇴𝗡𝗟𝗬 𝗙𝗢𝗥 𝔸ℕ𝕀ℕ𝔼𝔼 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋 𝗢𝗪𝗡𝗘𝗥.")
+        await event.reply("🇴𝗡𝗟𝗬 𝗙𝗢𝗥 Rɪᴛᴇsʜ 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋 𝗢𝗪𝗡𝗘𝗥.")
