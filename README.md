@@ -2,7 +2,7 @@
 
 <h4 align="center"> 𝐀 𝐏𝐎𝐖𝐄𝐑𝐅𝐔𝐋 𝐒𝐏𝐀𝐌𝐁𝐎𝐓𝐒</h4>
 
-[<img src="https://telegra.ph/file/7b23e31e05a689b217552.jpg"/>]
+[<img src="https://telegra.ph/file/fd3ad786a249ff2bf3889.jpg"/>]
 
 > ⭐️ Thanks to everyone for using this op 🥀 𝔸ℕ𝕀ℕ𝔼𝔼 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋 🥀. That is the greatest pleasure we have !
 
@@ -23,6 +23,6 @@
 <summary><b>sᴜᴘᴘᴏʀᴛ</b></summary>
 <br>
 
-<a href="https://t.me/MRITYUY"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+<a href="https://t.me/I_RITESH_I"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 
 </details>
