@@ -24,7 +24,7 @@ async def ping(e):
         jarvis = await e.reply(f"Rɪᴛᴇsʜ 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await jarvis.edit(f"𝐖𝐇𝐀𝐓 𝐈 𝐂𝐀𝐍 𝐃𝐎 𝐅𝐎𝐑 𝐘𝐎𝐔 𝐁𝐀𝐁𝐘 [𝐌𝐲 𝐎𝐖𝐍𝐄𝐑 𝐈𝐒𝔸ℕ𝕀ℕ𝔼𝔼 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋 ]")
+        await jarvis.edit(f"𝐖𝐇𝐀𝐓 𝐈 𝐂𝐀𝐍 𝐃𝐎 𝐅𝐎𝐑 𝐘𝐎𝐔 𝐁𝐀𝐁𝐘 [𝐌𝐲 𝐎𝐖𝐍𝐄𝐑 Rɪᴛᴇsʜ 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋 ]")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -117,7 +117,7 @@ async def addsudo(event):
             return
 
         if str(target) in sudousers:
-            await ok.edit(f"𝙃 𝙊 𝙉 𝙀 𝙔 ✘ 𝘿 𝘼 𝘿 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥. !!")
+            await ok.edit(f"Already a 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥. !!")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
