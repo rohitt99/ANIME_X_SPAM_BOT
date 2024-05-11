@@ -3,7 +3,7 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"Ritesh 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋˼ 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n\n» **𝐂𝐋𝐈𝐂𝐊 𝐎𝐍 𝐁𝐔𝐓𝐓𝐎𝐍 𝐅𝐎𝐑 𝐇𝐄𝐋𝐏**\n» **𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥: ˹@I_RITESH_I ˼🫧**"
+HELP_STRING = f"Rɪᴛᴇsʜ 𝕏 𝕊ℙ𝔸𝕄𝔹𝕆𝕋˼ 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n\n» **𝐂𝐋𝐈𝐂𝐊 𝐎𝐍 𝐁𝐔𝐓𝐓𝐎𝐍 𝐅𝐎𝐑 𝐇𝐄𝐋𝐏**\n» **𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥: ˹@I_RITESH_I ˼🫧**"
 
 HELP_BUTTON = [
     [
@@ -15,7 +15,7 @@ HELP_BUTTON = [
     ],
     [
       Button.url("★𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥★", "https://t.me/I_RITESH_I")
-     # Button.url("★𝗦𝗨𝗣𝗣𝗢𝗥𝗧★", "https://t.me/NOBITA_H")
+     
     ],
   [   
       Button.inline("★𝗡𝗘𝗪 𝗖𝗢𝗠𝗠𝗔𝗡𝗗★", data="yash")
@@ -182,7 +182,7 @@ async def helpback(event):
               ],
               [
                 Button.url("★𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥★", "https://t.me/I_RITESH_I")
-           #     Button.url("★𝗦𝗨𝗣𝗣𝗢𝗥𝗧★", "https://t.me/NOBITA_H")
+           
               ]
             ]
           )
