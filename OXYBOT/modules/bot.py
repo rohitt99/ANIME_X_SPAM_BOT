@@ -1,59 +1,12 @@
-#  Copyright (c) 2022 @TheoxybotoeL - oxybotoeL
-# Telegram Ban All Bot 
-# Creator - oxybotoeL
+import sys
+import heroku3
 
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, CMD_HNDLR as hl
 from config import SUDO_USERS
 from os import execl, getenv
 from telethon import events
 from datetime import datetime
-import logging
-import re
-import os
-import sys
-import asyncio
-from telethon import TelegramClient, events
-import telethon.utils
-from telethon.tl import functions
-from telethon.tl.functions.channels import LeaveChannelRequest
-from asyncio import sleep
-from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins, ChatAdminRights
-from telethon.tl.functions.channels import EditBannedRequest
-from datetime import datetime
-from var import Var
-from time import sleep
-from telethon.errors.rpcerrorlist import FloodWaitError
-from telethon.tl import functions
-from telethon.tl.types import (
-    ChannelParticipantsAdmins,
-    ChannelParticipantsKicked,
-    ChatBannedRights,
-    UserStatusEmpty,
-    UserStatusLastMonth,
-    UserStatusLastWeek,
-    UserStatusOffline,
-    UserStatusOnline,
-    UserStatusRecently,
-)
 
-RIGHTS = ChatBannedRights(
-    until_date=None,
-    view_messages=True,
-    send_messages=True,
-    send_media=True,
-    send_stickers=True,
-    send_gifs=True,
-    send_games=True,
-    send_inline=True,
-    embed_links=True,
-)
-
-
-#logging.basicConfig(level=logging.INFO)
-
-print("Starting.....")
-
-#oxybot = TelegramClient('oxybot', Var.API_ID, Var.API_HASH).start(bot_token=Var.BOT_TOKEN)
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
@@ -65,34 +18,171 @@ print("Starting.....")
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-async def banall(event):
-   if event.sender_id in SUDO_USERS:
-     if not event.is_group:
-         Reply = f"Noob !! Use This Cmd in Group."
-         await event.reply(Reply)
-     else:
-         await event.delete()
-         oxybot = await event.get_chat()
-         oxybotoeLop = await event.client.get_me()
-         admin = oxybot.admin_rights
-         creator = oxybot.creator
-         if not admin and not creator:
-              return await event.reply("𝙸 𝚍𝚘𝚗'𝚝 𝙷𝚊𝚟𝚎 𝚜𝚞𝚏𝚏𝚒𝚌𝚒𝚎𝚗𝚝 𝚁𝚒𝚐𝚑𝚝𝚜!!")
-         oxybotoeL = await oxybot.send_message(event.chat_id, "**Feel The TN Power ⚡**")
-         admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
-         admins_id = [i.id for i in admins]
-         all = 0
-         bann = 0
-         async for user in event.client.iter_participants(event.chat_id):
-             all += 1
-             try:
-               if user.id not in admins_id:
-                    await event.client(EditBannedRequest(event.chat_id, user.id, RIGHTS))
-                    bann += 1
-                    await asyncio.sleep(0.1)
-             except Exception as e:
-                   print(str(e))
-                   await asyncio.sleep(0.1)
+async def ping(e):
+    if e.sender_id in SUDO_USERS:
+        start = datetime.now()
+        jarvis = await e.reply(f"𝐑𝐈𝐓𝐄𝐒𝐇 ꭙ 𝕊ℙ𝔸𝕄🫧")
+        end = datetime.now()
+        mp = (end - start).microseconds / 1000
+        await jarvis.edit(f"𝐑𝐈𝐓𝐄𝐒𝐇 ꭙ 𝕊ℙ𝔸𝕄 🤖")
 
-    
 
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
+async def restart(e):
+    if e.sender_id in SUDO_USERS:
+        await e.reply(f"`ℕ𝕆𝔹𝕀𝕋𝔸 ꭙ 𝕊ℙ𝔸𝕄 SUDO USER DONE.`")
+        try:
+            await X1.disconnect()
+        except Exception:
+            pass
+        try:
+            await X2.disconnect()
+        except Exception:
+            pass
+        try:
+            await X3.disconnect()
+        except Exception:
+            pass
+        try:
+            await X4.disconnect()
+        except Exception:
+            pass
+        try:
+            await X5.disconnect()
+        except Exception:
+            pass
+        try:
+            await X6.disconnect()
+        except Exception:
+            pass
+        try:
+            await X7.disconnect()
+        except Exception:
+            pass
+        try:
+            await X8.disconnect()
+        except Exception:
+            pass
+        try:
+            await X9.disconnect()
+        except Exception:
+            pass
+        try:
+            await X10.disconnect()
+        except Exception:
+            pass
+
+        execl(sys.executable, sys.executable, *sys.argv)
+
+
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
+async def addsudo(event):
+    if event.sender_id == OWNER_ID:
+        Heroku = heroku3.from_key(HEROKU_API_KEY)
+        sudousers = getenv("SUDO_USERS", default=None)
+
+        ok = await event.reply(f"»SUDO IS DONE 👍_")
+        target = ""
+        if HEROKU_APP_NAME is not None:
+            app = Heroku.app(HEROKU_APP_NAME)
+        else:
+            await ok.edit("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
+            return
+        heroku_var = app.config()
+        if event is None:
+            return
+        try:
+            reply_msg = await event.get_reply_message()
+            target = reply_msg.sender_id
+        except:
+            await ok.edit("» 𝗥𝗘𝗣𝗟𝗬 𝗢𝗡 𝗨𝗦𝗘𝗥 !!")
+            return
+
+        if str(target) in sudousers:
+            await ok.edit(f"𝐑𝐈𝐓𝐄𝐒𝐇 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥. !!")
+        else:
+            if len(sudousers) > 0:
+                newsudo = f"{sudousers} {target}"
+            else:
+                newsudo = f"{target}"
+            await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ADD KAR DIYE HAI SUDO..BOT RESTART HO RHA HAI`")
+            heroku_var["SUDO_USERS"] = newsudo    
+
+    elif event.sender_id in SUDO_USERS:
+        await event.reply("» TUMHARI MA KA JO HO DEKHA JAYE SUDO TO NAHI DENA ...")
+
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
+async def removesudo(event):
+    if event.sender_id == OWNER_ID:
+        Heroku = heroku3.from_key(HEROKU_API_KEY)
+        sudousers = getenv("SUDO_USERS", default=None)
+        ok = await event.reply(f" 𝗡𝗜𝗞𝗔𝗟 𝗗𝗜𝗬𝗔 𝗠𝗔𝗗𝗥𝗖𝗛𝗢𝗗 𝗞𝗢...")
+        target = ""
+        if HEROKU_APP_NAME is not None:
+            app = Heroku.app(HEROKU_APP_NAME)
+        else:
+            await ok.edit("`[HEROKU]:\nPlease set up your HEROKU_APP_NAME`")
+            return
+        heroku_var = app.config()
+        if event is None:
+            return
+        try:
+            reply_msg = await event.get_reply_message()
+            target = reply_msg.sender_id
+        except:
+            await ok.edit("Reply to a message to remove the user.")
+            return
+        if str(target) not in sudousers:
+            await ok.edit("User is not in the sudo list.")
+        else:
+            new_sudo_users = " ".join([user for user in sudousers.split() if user != str(target)])
+            await ok.edit(f"Removed sudo user: `{target}`")
+            heroku_var["SUDO_USERS"] = new_sudo_users
+    else:
+        await event.reply("𝗢𝗡𝗟𝗬 𝗢𝗪𝗡𝗘𝗥 𝗖𝗔𝗡 𝗥𝗘𝗠𝗢𝗩𝗘 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥𝗦.")
+
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
+async def show_sudo_users(event):
+    if event.sender_id == OWNER_ID:
+        sudo_users_list = "𝐑𝐈𝐓𝐄𝐒𝐇🫧 𝗖𝗨𝗥𝗥𝗘𝗡𝗧 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥𝗦 𝗟𝗜𝗦𝗧:\n"
+        for user_id in SUDO_USERS:
+            sudo_users_list += f"- {user_id}\n"
+        await event.reply(sudo_users_list)
+    else:
+        await event.reply("🇴𝗡𝗟𝗬 𝗙𝗢𝗥 𝐑𝐈𝐓𝐄𝐒𝐇🫧 𝗢𝗪𝗡𝗘𝗥.")
