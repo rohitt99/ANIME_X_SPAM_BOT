@@ -47,20 +47,3 @@ async def banall(event):
             await event.reply(f"Banned {banned_users} out of {all_users} users.")
 
 # Make sure you handle starting the clients
-async def start_clients():
-    await asyncio.gather(
-        X1.start(),
-        X2.start(),
-        X3.start(),
-        X4.start(),
-        X5.start(),
-        X6.start(),
-        X7.start(),
-        X8.start(),
-        X9.start(),
-        X10.start()
-    )
-
-# Running the clients
-loop = asyncio.get_event_loop()
-loop.run_until_complete(start_clients())
