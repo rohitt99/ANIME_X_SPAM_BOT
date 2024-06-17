@@ -14,7 +14,7 @@ HELP_BUTTON = [
       Button.inline("★𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦★", data="extra")
     ],
     [
-      Button.url("★𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥★", "https://t.me/I_RITESH_I")
+      Button.url("★𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥★", "https://t.me/ROHIT_LEGEND")
      
     ],
   [   
@@ -38,7 +38,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://telegra.ph/file/fd3ad786a249ff2bf3889.jpg",
+              "https://graph.org/file/350c9c541ecf4f2c67070.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -67,7 +67,7 @@ extra_msg = f"""
 💖 𝗔𝗯𝘂𝘀𝗲𝗦𝗽𝗮𝗺: **🌺ᴏɴᴇ ᴡᴏʀᴅ ʙɪɢ ɢᴀᴀʟɪ sᴘᴀᴍ🌺**
   1) {hl}𝚊𝚋𝚞𝚜𝚎 <𝚌𝚘𝚞𝚗𝚝> <𝚞𝚜𝚎𝚛𝚗𝚊𝚖𝚎>
   
-**© ˹ @I_RITESH_I˼**
+**© ˹ @ROHIT_LEGEND˼**
 """
 
 
@@ -105,7 +105,7 @@ yash_msg = f"""
 
 
 
-**© ˹@I_RITESH_I˼**💘
+**© ˹@ROHIT_LEGEND**💘
 """
 
                  
@@ -136,7 +136,7 @@ raid_msg = f"""
   1) {hl} 𝐂𝐑𝐀𝐈𝐃 < 𝐂𝐎𝐔𝐍𝐓 > < 𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄 >
   2) {hl} 𝐂𝐑𝐀𝐈𝐃 < 𝐂𝐎𝐔𝐍𝐓 > <𝐑𝐄𝐏𝐋𝐘 𝐓𝐎 𝐀 𝐔𝐒𝐄𝐑 >
 
-**© ˹@I_RITESH_I˼**💘
+**© ˹@ROHIT_LEGEND**💘
 """
 
 spam_msg = f"""
@@ -153,7 +153,7 @@ spam_msg = f"""
   1) {hl}𝐇𝐀𝐍𝐆 < 𝐂𝐎𝐔𝐍𝐓𝐄𝐑 >
 
 
-** © ˹@I_RITESH_I˼**
+** © ˹@ROHIT_LEGEND**
 """                     
            
            
@@ -181,13 +181,13 @@ async def helpback(event):
                 Button.inline("★𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦★", data="extra")
               ],
               [
-                Button.url("★𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥★", "https://t.me/I_RITESH_I")
+                Button.url("★𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥★", "https://t.me/ROHIT_LEGEND")
            
               ]
             ]
           )
     else:
-        await event.answer("Developer - @I_RITESH_I★" , cache_time=0, alert=True)
+        await event.answer("Developer - @ROHIT_LEGEND★" , cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -206,7 +206,7 @@ async def help_spam(event):
               buttons=[[Button.inline("< Back", data="help_back"),],],
               ) 
     else:
-        await event.answer("Developer - @I_RITESH_I★", cache_time=0, alert=True)
+        await event.answer("Developer - @ROHIT_LEGEND★", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -225,7 +225,7 @@ async def help_raid(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
           )
     else:
-        await event.answer("Developer - @I_RITESH_I★", cache_time=0, alert=True)
+        await event.answer("Developer - @ROHIT_LEGEND★", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -244,7 +244,7 @@ async def help_extra(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
     else:
-        await event.answer("Developer - @I_RITESH_I★", cache_time=0, alert=True)
+        await event.answer("Developer - @ROHIT_LEGEND★", cache_time=0, alert=True)
         
 
 @X1.on(events.CallbackQuery(pattern=r"yash"))
