@@ -21,10 +21,10 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        jarvis = await e.reply(f"𝐑𝐈𝐓𝐄𝐒𝐇 ꭙ 𝕊ℙ𝔸𝕄🫧")
+        jarvis = await e.reply(f"BAAP ABHI JINDA HAI °@ROHIT_LEGEND🫧")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await jarvis.edit(f"𝐑𝐈𝐓𝐄𝐒𝐇 ꭙ 𝕊ℙ𝔸𝕄 🤖")
+        await jarvis.edit(f"BAAP ABHI JINDA HAI °@ROHIT_LEGEND°")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
